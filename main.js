@@ -6,7 +6,7 @@ import Slider from './Slider';
 import Sliders from './Sliders';
 
 ReactDOM.render(
-	<App name="This is my first txt prop" age={10}/>, 
+	<App name="Tom" age={10}/>, 
 	document.getElementById('app')
 );
 

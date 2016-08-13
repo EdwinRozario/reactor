@@ -6,7 +6,7 @@ class App extends React.Component {
 		let age = this.props.age;
 		return(
 			<div>
-				<h1>{name} is {age} years old.</h1>
+				<h2>{name} is {age} years old.</h2>
 				<p>This is a component with 2 props</p>
 			</div>
 			);

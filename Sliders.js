@@ -28,6 +28,7 @@ class Sliders extends React.Component {
 	render() {
 		return(
 			<div>
+			  <h2>Sum is {this.state.total}</h2>
 				<Widget ref='red' update={this.update}/>
 				{this.state.red}
 				<br />
@@ -36,9 +37,7 @@ class Sliders extends React.Component {
 				<br />
 				<Widget ref='green' update={this.update}/>								
 				{this.state.green}
-				<br />
-				Total is {this.state.total}
-				<p>This is a component with 3 widgets</p>
+				<p>This is a component with 3 widgets. Also using refs</p>
 			</div>
 			);
 	}

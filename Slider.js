@@ -14,7 +14,7 @@ class Slider extends React.Component {
 	render() {
 		return(
 			<div>
-				<h1>Rage is {this.state.count}.</h1>
+				<h2>Rage is {this.state.count}</h2>
 				<Widget update={this.update}/>
 				<p>This is a component with 1 prop and a widget</p>
 			</div>
