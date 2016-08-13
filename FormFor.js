@@ -7,6 +7,8 @@ class FormFor extends React.Component {
 			name: 'John',
 			age: 0
 		}
+		this.update_name = this.update_name.bind(this)
+		this.update_age = this.update_age.bind(this)
 	}
 
 	update_name(name){
@@ -20,14 +22,27 @@ class FormFor extends React.Component {
 	render() {
 		return(
 			<div>
-				<input type='text' onChange={this.update_name.bind(this)}/>
-				<input type='text' onChange={this.update_age.bind(this)}/>				
-				<h3>{this.state.name} is {this.state.age} years old</h3>
-				<p>This is a component with 2 state variables updateable from the form</p>			
+				<Widget name={this.state.name} age={this.state.age}
+				 update_name={this.update_name}
+				 update_age={this.update_age}/>
+				<p>
+					This is a component with 2 state variables updateable from the form and the form and
+					text is in a Widget. 
+				</p>			
 			</div>
 			);
 	}
 }
 
+
+const Widget = (props) => {
+	return(
+			<div>
+				<input type='text' onChange={props.update_name}/>
+				<input type='text' onChange={props.update_age}/>				
+				<h3>{props.name} is {props.age} years old</h3>
+			</div>
+		);
+}
 
 export default FormFor
