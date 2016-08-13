@@ -3,18 +3,24 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import FormFor from './FormFor';
 import Slider from './Slider';
+import Sliders from './Sliders';
 
 ReactDOM.render(
 	<App name="This is my first txt prop" age={10}/>, 
-	document.getElementById('app'))
-;
+	document.getElementById('app')
+);
 
 ReactDOM.render(
 	<FormFor/>, 
-	document.getElementById('form'))
-;
+	document.getElementById('form')
+);
 
 ReactDOM.render(
 	<Slider/>, 
-	document.getElementById('slider'))
-;
+	document.getElementById('slider')
+);
+
+ReactDOM.render(
+	<Sliders/>, 
+	document.getElementById('sliders')
+);
