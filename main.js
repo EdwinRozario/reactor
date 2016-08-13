@@ -4,6 +4,7 @@ import App from './App';
 import FormFor from './FormFor';
 import Slider from './Slider';
 import Sliders from './Sliders';
+import Mounter from './Mounter';
 
 ReactDOM.render(
 	<App name="Tom" age={10}/>, 
@@ -23,4 +24,9 @@ ReactDOM.render(
 ReactDOM.render(
 	<Sliders/>, 
 	document.getElementById('sliders')
+);
+
+ReactDOM.render(
+	<Mounter/>, 
+	document.getElementById('mounter')
 );
