@@ -29,6 +29,10 @@ class Mounter extends React.Component {
 	}
 }
 
+// Events on mounting and unmounting components
+// componentWillMount() {}
+// componentDidMount() {}
+// componentWillUnmount() {}
 
 const Widget = (props) => {
 	return(
