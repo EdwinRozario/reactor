@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import FormFor from './FormFor';
-import Slider from './Slider';
-import Sliders from './Sliders';
-import Mounter from './Mounter';
-import Mixin from './Mixin';
+import App from './components/App';
+import FormFor from './components/FormFor';
+import Slider from './components/Slider';
+import Sliders from './components/Sliders';
+import Mounter from './components/Mounter';
+import Mixin from './components/Mixin';
 
 ReactDOM.render(
 	<App name="Tom" age={10}/>, 
