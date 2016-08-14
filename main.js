@@ -6,6 +6,7 @@ import Slider from './components/Slider';
 import Sliders from './components/Sliders';
 import Mounter from './components/Mounter';
 import Mixin from './components/Mixin';
+import Composable from './components/Composable';
 
 ReactDOM.render(
 	<App name="Tom" age={10}/>, 
@@ -35,4 +36,9 @@ ReactDOM.render(
 ReactDOM.render(
 	<Mixin/>, 
 	document.getElementById('mixin')
+);
+
+ReactDOM.render(
+	<Composable/>, 
+	document.getElementById('composable')
 );
