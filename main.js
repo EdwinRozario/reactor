@@ -5,6 +5,7 @@ import FormFor from './FormFor';
 import Slider from './Slider';
 import Sliders from './Sliders';
 import Mounter from './Mounter';
+import Mixin from './Mixin';
 
 ReactDOM.render(
 	<App name="Tom" age={10}/>, 
@@ -29,4 +30,9 @@ ReactDOM.render(
 ReactDOM.render(
 	<Mounter/>, 
 	document.getElementById('mounter')
+);
+
+ReactDOM.render(
+	<Mixin/>, 
+	document.getElementById('mixin')
 );
